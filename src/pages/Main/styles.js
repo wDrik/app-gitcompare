@@ -1,9 +1,6 @@
-import React from 'react';
 import styled from 'styled-components';
 
-import logo from '../assets/img/logo.svg';
-
-const Container = styled.div`
+export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,7 +13,7 @@ const Container = styled.div`
   }
 `;
 
-const Form = styled.form`
+export const Form = styled.form`
   margin-top: 20px;
   width: 100%;
   max-width: 400px;
@@ -44,18 +41,10 @@ const Form = styled.form`
     font-weight: 600;
     border-radius: 4px;
     cursor: pointer;
+    transition: all ease-in-out .4s;
+
+    &:hover {
+      background: #52d89f;
+    }
   }
 `;
-
-const Main = () => (
-  <Container>
-    <img src={ logo } className="logo" alt="Github" />
-
-    <Form>
-      <input type="text" placeholder="usuário/repositório" />
-      <button type="submit">OK</button>
-    </Form>
-  </Container>
-);
-
-export default Main;

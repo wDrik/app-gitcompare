@@ -3,7 +3,7 @@ import React, { Fragment } from 'react';
 import GlobalStyles from './styles/global';
 
 //--> Components
-import Main from './pages/Main';
+import Main from './pages/Main/index';
 
 const App = () => (
   <Fragment>
