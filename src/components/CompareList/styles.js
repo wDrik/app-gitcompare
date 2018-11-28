@@ -2,17 +2,20 @@ import styled from 'styled-components';
 
 export const Container = styled.div`
   margin-top: 50px;
+  width: 100%;
+  max-width: 1280px;
 
   display: flex;
   flex-direction: row;
   justify-content: center;
+  flex-wrap: wrap;
 `;
 
 export const Repository = styled.div`
   width: 250px;
   background: #FFF;
   border-radius: 4px;
-  margin: 0 10px;
+  margin: 10px;
 
   display: flex;
   flex-direction: column;
